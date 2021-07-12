@@ -15,6 +15,11 @@ main{
 .container{
     width: 870px;
     background-color: #ffffff;
+    padding: 0 30px 30px 30px;
+}
+
+hr{
+    border: 1px solid #D1D1D1;
 }
 
 /* Top Players Style */
@@ -23,11 +28,12 @@ main{
     font-size: 24px;
     line-height: 36px;
     color: #562EFF;
-;
+    margin: 0;
+    padding: 30px 0 35px 0;
 }
 
 .top-players{
-    padding: 0 30px;
+    padding-bottom: 30px;
 }
 
 .players{
