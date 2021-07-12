@@ -68,6 +68,7 @@ hr{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-row-gap: 26px;
+    grid-column-gap: 30px;
 }
 
 .blog{
@@ -139,4 +140,47 @@ hr{
 
 .fa-star.empty{
     color: #AEAEAE;
+}
+
+/* Media Queries */
+
+/* Mobile Device */
+
+@media only screen and (max-width:668px) {
+    .container{
+        width: 100%;
+    }
+    /* Top Players */
+    .players, .blogs, .courses{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .player, .blog, .course{
+        flex-direction: column;
+    }
+    .player-name{
+        margin: 0;
+        padding: 10px 0 0 0;
+    }
+
+    /* Top Blogs */
+    
+    .blogs{
+        grid-column-gap: 30px;
+    }
+
+    /* Course */
+    .course-info{
+        align-items: center;
+        justify-content:flex-start;
+    }
+    .course-duration{
+        margin-left: 20px;   
+    }
+}
+
+/* Tablet Devices */
+@media only screen and (min-width:689px) and (max-width:992px) {
+    .players{
+        background-color: brown;
+    }
 }
